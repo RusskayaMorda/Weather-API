@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(52, 97, 64);
+    padding: 10px;
+}
+
+h1{
+    color: #8a2be2;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h2{
+    color: #25cc65;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    color: #b6ac16;
+    text-align: center;
+}
+
+label{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+#cityName{
+    border: 5px double #d58efc;
+}
+
+#searchCity{
+    background-color: #90cfff;
+    border: 5px solid #063e1c;
+}
+
+#forecastSection{
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+#forecastCards{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 5px 0px;
+    background-color: #d4f7e0;
+}
+
+.dayBlock{
+    background-color: azure;
+    width: 12em;
+    padding: 0.2em;
+}
+
+#hourlyForecastSection{
+    background-color: beige;
+    padding: 5px;
+}
+
+#hourlyForecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 10px;
+}
+
+.hourlyData {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.morningBlock, .afternoonBlock, .eveningBlock, .nightBlock {
+    flex: 1;
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.morningBlock{
+    background-color: #e0f7fa;
+}
+.morningBlock h2 {
+    color: #01579b;
+}
+
+.afternoonBlock{
+    background-color: #fff9c4;
+}
+
+.afternoonBlock h2 {
+    color: #4e342e;
+}
+
+.eveningBlock{
+    background-color: #ffe0b2;
+}
+
+.eveningBlock h2 {
+    color: #4e342e;
+}
+
+.nightBlock{
+    background-color: #000000;
+}
+
+.nightBlock h2 {
+    color: #ffffff;
+}
