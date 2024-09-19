@@ -8,9 +8,23 @@
         <title>Weather forecast</title>
     </head>
     <body>
-        <section id="forecast">
-            <section id="temperature"><h2>Average daily temperature</h2></section>
-            <section id="precipitation"><h2>Precipitation</h2></section>
+        <section id="locationSection">
+            <label for="cityName">City: </label>
+            <input type="text" id="cityName" placeholder="Enter city name">
+            <button id="searchCity">Search</button>
+            <div id="LocationSection">
+                <h2 id="currentCity">Current city: Raleigh</h2>
+            </div>            
+        </section>        
+        <section id="forecastSection">
+            <h1>7-Day Weather Forecast</h1>
+            <div id="forecastCards">
+            </div>
+        </section>
+        <section id='hourlyForecastSection' hidden>
+            <h1></h1>
+            <div id="hourlyForecast">                
+            </div>
         </section>
     </body>
     <script src="./js/index.js"></script>
